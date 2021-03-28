@@ -18,4 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('api/first-dog/','Api\ApiController@getFirstDog');
+Route::get('first-dog','Api\ApiController@getFirstDog');
+Route::get('dogs','Api\ApiController@getAllDog');
